@@ -16,6 +16,7 @@
         1,
         null,
         null,
+        null,
         null
       ],
       "/Users/danielstephenson/Documents/Projects/SilverBars-Marketplace/lib/silverbars.rb": [
@@ -34,13 +35,10 @@
         1,
         1,
         1,
-        1,
-        1,
-        1,
         null,
         null
       ]
     },
-    "timestamp": 1547905089
+    "timestamp": 1547905240
   }
 }

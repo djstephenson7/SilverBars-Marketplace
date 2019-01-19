@@ -10,10 +10,7 @@ class SilverBars
   end
 
   def add(id, quantity, price, type)
-    @orders[:id] = id
-    @orders[:quantity] = quantity
-    @orders[:price] = price
-    @orders[:type] = type
+    @orders = { id: id, quantity: quantity, price: price, type: type }
     @history << @orders
     @orders = {}
   end
