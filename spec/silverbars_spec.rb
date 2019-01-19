@@ -1,18 +1,13 @@
 require './lib/silverbars'
 require 'pry'
 describe SilverBars do
-  describe 'show' do
-    it 'displays an array of hashes' do
-      expect(subject.show).to eq([])
-    end
-  end
-
   describe 'add' do
     it 'Adds a new order to the order history array' do
       subject.add(1, 3.5, 300, 'BUY')
       subject.add(2, 1.5, 310, 'SELL')
-      expect(subject.show)
-        .to eq ['BUY: 3.5kg for £300 [user1]', 'SELL: 1.5kg for £310 [user2]']
+      expect { subject.show }
+        .to output("BUY: 3.5kg for £300 [user1]\nSELL: 1.5kg for £310 [user2]\n")
+        .to_stdout
     end
   end
 
@@ -21,8 +16,8 @@ describe SilverBars do
       subject.add(1, 3.5, 300, 'BUY')
       subject.add(2, 1.5, 450, 'SELL')
       subject.delete
-      expect(subject.show)
-        .to eq ['BUY: 3.5kg for £300 [user1]']
+      expect { subject.show }
+        .to output("BUY: 3.5kg for £300 [user1]\n").to_stdout
     end
   end
 end
