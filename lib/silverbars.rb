@@ -14,4 +14,8 @@ class SilverBars
     @history << @orders
     @orders = {}
   end
+
+  def delete
+    @history.pop
+  end
 end
