@@ -9,21 +9,38 @@
         1,
         null,
         null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/danielstephenson/Documents/Projects/SilverBars-Marketplace/lib/silverbars.rb": [
+        null,
         1,
         1,
-        1,
-        1,
+        2,
+        2,
         null,
         null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
         1,
         1,
         null,
         null
       ]
     },
-    "timestamp": 1547897935
+    "timestamp": 1547905089
   }
 }
