@@ -1,0 +1,16 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/danielstephenson/Documents/Projects/SilverBars-Marketplace/spec/silverbars_spec.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/danielstephenson/Documents/Projects/SilverBars-Marketplace/lib/silverbars.rb": [
+        1,
+        null
+      ]
+    },
+    "timestamp": 1547893209
+  }
+}
