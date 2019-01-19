@@ -1,21 +1,28 @@
 # SilverBars class which handles the order board logic.
 class SilverBars
   def initialize
-    @history = []
-    @orders = {}
+    @buy_history = []
+    @sell_history = []
+    @order = {}
   end
 
   def show
-    puts @history.collect { |p| "#{p[:type]}: #{p[:quantity]}kg for £#{p[:price]} [user#{p[:id]}]" }
+    puts @buy_history.collect { |p| "#{p[:type]}: #{p[:quantity]}kg for £#{p[:price]} [user#{p[:id]}]" }
+    puts @sell_history.collect { |p| "#{p[:type]}: #{p[:quantity]}kg for £#{p[:price]} [user#{p[:id]}]" }
   end
 
   def add(id, quantity, price, type)
-    @orders = { id: id, quantity: quantity, price: price, type: type }
-    @history << @orders
-    @orders = {}
+    @order = { id: id, quantity: quantity, price: price, type: type }
+    if @order.has_value? 'BUY'
+      @buy_history << @order
+    else
+      @sell_history << @order
+    end
+
+    @order = {}
   end
 
   def delete
-    @history.pop
+    @buy_history.pop
   end
 end
