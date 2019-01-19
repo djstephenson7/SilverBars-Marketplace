@@ -1,4 +1,5 @@
 GEM
+  remote: https://rubygems.org/
   specs:
     ansi (1.5.0)
     ast (2.4.0)
@@ -17,6 +18,7 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
     rainbow (3.0.0)
+    rb-readline (0.5.5)
     rspec (3.8.0)
       rspec-core (~> 3.8.0)
       rspec-expectations (~> 3.8.0)
@@ -55,6 +57,7 @@ PLATFORMS
 
 DEPENDENCIES
   pry
+  rb-readline
   rspec
   rubocop
   simplecov
