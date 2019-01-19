@@ -13,16 +13,11 @@ class SilverBars
 
   def add(id, quantity, price, type)
     @order = { id: id, quantity: quantity, price: price, type: type }
-    if @order.has_value? 'BUY'
-      @buy_history << @order
-    else
-      @sell_history << @order
-    end
-
+    @order.value? 'BUY' ? @buy_history << @order : @sell_history << @order
     @order = {}
   end
 
-  def delete
+  def delete_buy
     @buy_history.pop
   end
 end

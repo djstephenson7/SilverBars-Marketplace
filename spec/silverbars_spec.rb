@@ -15,7 +15,7 @@ describe SilverBars do
     it 'Removes an order hash from the history array' do
       subject.add(1, 3.5, 300, 'BUY')
       subject.add(2, 1.5, 450, 'BUY')
-      subject.delete
+      subject.delete_buy
       expect { subject.show }
         .to output("BUY: 3.5kg for £300 [user1]\n").to_stdout
     end
