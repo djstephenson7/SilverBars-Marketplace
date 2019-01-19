@@ -6,7 +6,7 @@ class SilverBars
   end
 
   def show
-    @history
+    @history.collect { |p| "#{p[:type]}: #{p[:quantity]}kg for £#{p[:price]} [user#{p[:id]}]" }
   end
 
   def add(id, quantity, price, type)
