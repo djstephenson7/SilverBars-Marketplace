@@ -28,6 +28,13 @@ describe SilverBars do
         .to output("SELL: 3.5kg for £300 [user1]\nSELL: 2.5kg for £303 [user3]\nSELL: 1.5kg for £307 [user2]\n")
         .to_stdout
     end
+    it 'Merges orders with identical prices together' do
+      subject.add(1, 3.5, 300, 'SELL')
+      subject.add(2, 3.5, 300, 'SELL')
+      expect { subject.show }
+        .to output("SELL: 7.0kg for £300\n")
+        .to_stdout
+    end
   end
 
   describe 'delete_buy' do
