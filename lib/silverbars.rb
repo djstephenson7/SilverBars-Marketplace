@@ -8,9 +8,9 @@ class SilverBars
 
   def show
     buy_sorted = @buy_history.sort_by { |k| k[:price] }.reverse
-    puts buy_sorted.map { |p| "#{p[:type]}: #{p[:quantity]}kg for £#{p[:price]} [user#{p[:id]}]" }
+    puts buy_sorted.map.with_index { |p, i| "#{i + 1}. #{p[:type]}: #{p[:quantity]}kg for £#{p[:price]} [user#{p[:id]}]" }
     sell_sorted = @sell_history.sort_by { |k| k[:price] }
-    puts sell_sorted.map { |p| "#{p[:type]}: #{p[:quantity]}kg for £#{p[:price]} [user#{p[:id]}]" }
+    puts sell_sorted.map.with_index { |p, i| "#{i + 1}. #{p[:type]}: #{p[:quantity]}kg for £#{p[:price]} [user#{p[:id]}]" }
   end
 
   def add(id, quantity, price, type)
