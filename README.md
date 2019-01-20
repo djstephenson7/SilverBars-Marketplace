@@ -23,7 +23,7 @@ To do this we would like to have a 'Live Order Board' that can provide us with t
   3) Get summary information of live orders (see explanation below)
 
   Imagine we have received the following orders:
-  
+
     - a) SELL: 3.5 kg for £306 [user1]
     - b) SELL: 1.2 kg for £310 [user2]
     - c)SELL: 1.5 kg for £307 [user3]
@@ -38,6 +38,7 @@ To do this we would like to have a 'Live Order Board' that can provide us with t
   The first thing to note here is that orders for the same price should be merged together (even when they are from different users). In this case it can be seen that order a) and d) were for the same amount (£306) and this is why only their sum (5.5 kg) is displayed (for £306) and not the individual orders (3.5 kg and 2.0 kg).The last thing to note is that for SELL orders the orders with lowest prices are displayed first. Opposite is true for the BUY orders.
 
   Notes:
+
     * Please provide a simple implementation of the live order board in any software language
     * The solution should have some instructions on how to demonstrate its functionality/correctness
     * No database, UI/WEB or a standalone runnable is needed for this assignment
@@ -112,7 +113,13 @@ rubocop
 ```
 
 ## Directions for use
-List of commands
+Setup
+
+Add Order
+
+Show Order Board
+
+Delete SELL Order 
 ## Screenshots
 
 ## Author

@@ -1,5 +1,5 @@
 require './lib/silverbars'
-require 'pry'
+
 describe SilverBars do
   describe 'add' do
     it 'Adds a new order to the order history array' do
@@ -26,13 +26,6 @@ describe SilverBars do
       subject.add(3, 2.5, 303, 'SELL')
       expect { subject.show }
         .to output("1. SELL: 3.5kg for £300 [user1]\n2. SELL: 2.5kg for £303 [user3]\n3. SELL: 1.5kg for £307 [user2]\n")
-        .to_stdout
-    end
-    it 'Merges orders with identical prices together' do
-      subject.add(1, 3.5, 300, 'SELL')
-      subject.add(2, 1.5, 300, 'SELL')
-      expect { subject.show }
-        .to output("SELL: 5.0kg for £300\n")
         .to_stdout
     end
   end
