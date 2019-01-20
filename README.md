@@ -23,6 +23,7 @@ To do this we would like to have a 'Live Order Board' that can provide us with t
   3) Get summary information of live orders (see explanation below)
 
   Imagine we have received the following orders:
+  
     - a) SELL: 3.5 kg for £306 [user1]
     - b) SELL: 1.2 kg for £310 [user2]
     - c)SELL: 1.5 kg for £307 [user3]
