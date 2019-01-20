@@ -30,9 +30,9 @@ describe SilverBars do
     end
     it 'Merges orders with identical prices together' do
       subject.add(1, 3.5, 300, 'SELL')
-      subject.add(2, 3.5, 300, 'SELL')
+      subject.add(2, 1.5, 300, 'SELL')
       expect { subject.show }
-        .to output("SELL: 7.0kg for £300\n")
+        .to output("SELL: 5.0kg for £300\n")
         .to_stdout
     end
   end
