@@ -103,6 +103,13 @@ This application runs using RSpec. This can be run with:
 ```
 rspec
 ```
+<img width="524" alt="screenshot 2019-01-20 at 21 09 21" src="https://user-images.githubusercontent.com/41509062/51445105-339ef280-1cf9-11e9-9b98-3396ea19838c.png">
+
+### Code Coverage
+
+Test coverage was monitored using SimpleCov.
+
+<img width="357" alt="screenshot 2019-01-20 at 21 09 27" src="https://user-images.githubusercontent.com/41509062/51445113-41ed0e80-1cf9-11e9-8367-4863924524ba.png">
 
 ### Styling tests
 
@@ -113,14 +120,28 @@ rubocop
 ```
 
 ## Directions for use
+
+Open your REPL with ONE of the following commands:
+```
+irb
+pry
+```
+
 Setup
+
+<img width="658" alt="screenshot 2019-01-20 at 21 23 33" src="https://user-images.githubusercontent.com/41509062/51445147-ac05b380-1cf9-11e9-8906-9257dd97774d.png">
 
 Add Order
 
+<img width="407" alt="screenshot 2019-01-20 at 21 14 53" src="https://user-images.githubusercontent.com/41509062/51445155-cf306300-1cf9-11e9-9b70-efa3e57b45b5.png">
+
 Show Order Board
 
-Delete SELL Order 
-## Screenshots
+<img width="261" alt="screenshot 2019-01-20 at 21 15 04" src="https://user-images.githubusercontent.com/41509062/51445157-d192bd00-1cf9-11e9-887e-23ee5f14b76d.png">
+
+Delete SELL Order
+
+<img width="261" alt="screenshot 2019-01-20 at 21 15 04" src="https://user-images.githubusercontent.com/41509062/51445157-d192bd00-1cf9-11e9-887e-23ee5f14b76d.png">
 
 ## Author
 
