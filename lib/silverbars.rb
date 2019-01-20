@@ -7,8 +7,10 @@ class SilverBars
   end
 
   def show
-    puts @buy_history.collect { |p| "#{p[:type]}: #{p[:quantity]}kg for £#{p[:price]} [user#{p[:id]}]" }
-    puts @sell_history.collect { |p| "#{p[:type]}: #{p[:quantity]}kg for £#{p[:price]} [user#{p[:id]}]" }
+    buy_sorted = @buy_history.sort_by { |k| k[:price] }.reverse
+    puts buy_sorted.map { |p| "#{p[:type]}: #{p[:quantity]}kg for £#{p[:price]} [user#{p[:id]}]" }
+    sell_sorted = @sell_history.sort_by { |k| k[:price] }
+    puts sell_sorted.map { |p| "#{p[:type]}: #{p[:quantity]}kg for £#{p[:price]} [user#{p[:id]}]" }
   end
 
   def add(id, quantity, price, type)
