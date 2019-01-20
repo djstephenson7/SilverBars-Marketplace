@@ -141,6 +141,10 @@ Show Order Board
 
 Delete SELL Order
 
+```
+silverbars.delete_sell
+```
+
 <img width="261" alt="screenshot 2019-01-20 at 21 15 04" src="https://user-images.githubusercontent.com/41509062/51445157-d192bd00-1cf9-11e9-887e-23ee5f14b76d.png">
 
 ## Author
